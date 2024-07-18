@@ -63,6 +63,15 @@ export default function App() {
           <Text style={styles.itemText}>Estado: {cepUser.uf}</Text>
         </View>
       }
+      { cepUser && 
+        <View style={styles.resultado}>
+          <Text style={styles.itemText}>CEP: {cepUser.cep}</Text>
+          <Text style={styles.itemText}>Logradouro: {cepUser.logradouro}</Text>
+          <Text style={styles.itemText}>Bairro: {cepUser.bairro}</Text>
+          <Text style={styles.itemText}>Cidade: {cepUser.localidade}</Text>
+          <Text style={styles.itemText}>Estado: {cepUser.uf}</Text>
+        </View>
+      }
     </SafeAreaView>
   );
 }
